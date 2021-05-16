@@ -1,0 +1,64 @@
+<script>
+//1. Declare uma variável de nome Weight
+let weight
+
+//2. Que tipo de dado é a variável acima?
+console.log(typeof weight)
+
+/*
+3. Declare uma variável e atribua valores para cada um dos dados:
+    *name: String
+    *age: Number (integer)
+    *stars: Number (float) //números reais ou quebrados
+    *isSubscribed: Booleal // Subscribed significa que a pessoa esta inscrita em alguma coisa
+*/
+
+let name = "Afrânio"
+let age = 42
+let stars = 4.8
+let isSubscribed = true
+
+//4. A variável abaixo é de que tipo de dado?
+// let student = {}; //Variáve é do tipo objeto
+
+//4.1 Atribua a esta variável as mesmas propriedades do exercício 3 e as declare no console.
+const student = {
+    name: "Afrânio",
+    age: 42,
+    weight: 90,
+    isSubscribed: true,
+};
+console.log(student)
+
+//4.2 Mostre no console a seguinte mensagem:
+    // <name> de idade <age> pesa <weight> kg
+
+   // Atenção, substitua <name> <age> e <weight> pelos valores de cad propriedade do objeto
+
+console.log(`${student.name} de idade ${student.age} anos, pesa ${student.weight} kg.`)
+
+//5. Declare uma variável do tipo Array, de nome students e não atribua a ela nenhum valor, ou seja, somente o Array vazio
+//let students = [];
+
+//6. Reatribua valor para a variável acima, colocando dentro dela o objeto student da questão 4. (Não copiar e colar o objeto, mas usar o obejto craido e inserir ele no Array)
+let students = [
+    student
+]
+console.log(students)
+
+//7. Coloque no console o valor da posição zero do Array acima
+console.log(students[0])
+
+//8. Crie um novo student e coloque na posição 1 do Array students
+const Ernandes = {
+    name: "Ernandes",
+    age: 76,
+    weight: 60,
+    isSubscribed: true,
+    }
+    students = [
+        student,
+        Ernandes,
+    ]
+console.log(students)
+</script>
